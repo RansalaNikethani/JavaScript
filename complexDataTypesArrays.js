@@ -35,3 +35,5 @@ console.log(books[0].title);
 console.log(books[1].title);
 console.log(books[2].title);
 console.log(books[3].title);
+
+let selectedBooks = books.slice(-2);
