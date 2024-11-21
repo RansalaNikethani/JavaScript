@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date object</title>
+    <script>
+
+        var myDate = new Date();  //info about date and time - 2024/09/12
+
+        var year = myDate.getFullYear();
+        document.write(year + "<br>");//2024 (year 2024)
+
+        var month = myDate.getMonth();    
+        document.write(month + "<br>");//8 (september)
+
+        var date = myDate.getDate();
+        document.write(date + "<br>");//12 (12th)
+
+        var day = myDate.getDay();
+        document.write(day + "<br>");//4 (thursday)
+
+        var hours = myDate.getHours();
+        document.write(hours + "<br>");//20 (8pm)
+
+        var minutes = myDate.getMinutes();
+        document.write(minutes + "<br>");//1 (1 min)
+
+        var seconds = myDate.getSeconds(); 
+        document.write(seconds + "<br>");//23 (23 sec)
+
+
+
+        //create a date with give date
+        var d1 = new Date("October22, 1995 10:20:22"); //Sun Oct 22 1995 10:20:22
+        document.write(d1+ "<br>");
+
+        var d2 = new Date(95,9,22); //Sun Oct 22 1995 00:00:00
+        document.write(d2+ "<br>");
+
+        var d3 = new Date(95,9,22,10,20,22); //Sun Oct 22 1995 10:20:22
+        document.write(d3+ "<br>"); 
+
+        //setting and editing dates and time
+        var myCurrentDate = new Date();
+        document.write("object created on day number " + myCurrentDate.getDay() + "<br>");
+        
+        myCurrentDate.setDate(15); //change day of month to 15
+
+        document.write("after amending date to 15th, the day number is " + myCurrentDate.getDay()+ "<br>"+ "<br>")
+
+        //-----------------------------
+        
+        document.write("created: " + myDate.toDateString() + " " + myDate.toTimeString() + "<br>"); 
+        //created: Thu Sep 12 2024 19:52:13 GMT+0530 (India Standard Time)
+
+        myDate.setDate(myDate.getDate() + 33); 
+        document.write("after amending 33 days: " + myDate.toDateString()+ " "+  myDate.toTimeString() )
+        //after amending 33 days: Tue Oct 15 2024 19:55:49 GMT+0530 (India Standard Time)
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

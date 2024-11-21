@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature</title>
+    <script>
+        function toFahrenheit(celTempValue){
+            var farTemp = ((celTempValue * 9)/5 + 32);
+            return farTemp
+        }
+        var celTemp = 100;
+        var farTempValue = toFahrenheit(celTemp);
+        document.write("Temperatute in celcius : " + celTemp + "<br>");
+        document.write("Temperatute in Fahrenheit : " + farTempValue);
+    </script>
+</head>
+<body>
+   <!-- <input type="button" value="check tempereture" onclick="alert('tempereture is : '+ (toFahrenheit(100)));"> -->
+</body>
+</html>

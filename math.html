@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math JS</title>
+</head>
+<body>
+    <script>
+        //rounding numbers
+        var num1 = 12.55;
+        var num2 = 12.45;
+        document.write(Math.floor(num1) + "<br>"); //12
+        document.write(Math.ceil(num1) + "<br>");  //13
+        document.write(Math.round(num1) + "<br>");  //13
+        document.write(Math.round(num2) + "<br>"); //12
+
+
+        //min and max
+        var ageDavid = 23;
+        var ageMary = 27;
+        var ageChris = 31;
+        var ageSandy = 19;
+        document.write("the youngest person is : " + Math.min(ageDavid,ageMary,ageChris,ageSandy) + (" years old <br>"));
+        document.write("the oldest person is : " + Math.max(ageDavid,ageMary,ageChris,ageSandy) + (" years old <br>"));
+
+
+        //random numbers
+        //document.write(Math.random());// between 0-1
+
+        function myRandNum(range){
+            return Math.round(Math.random() * range ) ;
+        }
+
+        var res = myRandNum(100);
+        document.write(res);
+        
+        //with keyword easy to use
+        with(Math){
+            var myRand = random();
+            var big = max(3,4,5);
+            var height = round(76.45);
+        }
+
+        document.write(myRand + "<br>"+ "    " +big+ "    "+ "<br>"+height)
+    </script>
+</body>
+</html>
