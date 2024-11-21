@@ -46,3 +46,6 @@ console.log(books.length);
 console.log(books[0].title);
 console.log(books[1].title);
 console.log(books[2].title);
+
+let sumOfPages = books[0].numberOfPages + books[1].numberOfPages + books[2].numberOfPages;
+console.log(`pages : ${sumOfPages}`);
